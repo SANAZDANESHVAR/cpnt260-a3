@@ -6,10 +6,7 @@
 
   <title>cpnt260-a3</title>
  <link rel="stylesheet" href="css/main.css"> 
-  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/reset.css">
-  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/utilities.css">
-  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/fonts/raleway-light_karla.css">
- <--! Font Awesome -->
+<!-- This is a from font awsome -->
  <script src="https://kit.fontawesome.com/47de5a11a5.js" crossorigin="anonymous"></script>
    <style>
 
@@ -17,7 +14,7 @@
      box-sizing: border-box;
      max-width:100vw; 
      height:auto;
-     margin: 0 auto;
+     margin:0 auto 0 auto;;
      background-size:cover;
      background-position:center;
      font-family: 'Proza Libre', sans-serif;
@@ -42,7 +39,7 @@
      font-size: 40px;
      letter-spacing: 5px;
      color:black;
-     margin: 1em auto 0 auto;
+     margin: 0.2em auto 0 auto;
      font-family: 'Open Sans', sans-serif;
     
     }
@@ -63,9 +60,7 @@
      font-family: 'Proza Libre', sans-serif;
      background-position: center; 
      color:black;
-     padding:1vh;
-     margin:auto;
-      
+     margin:auto;  
     }
     
    .card {
@@ -74,7 +69,7 @@
      max-width: 50ch;
      margin:auto; 
      position:relative; 
-     padding: 1em;
+     padding: 0.75em;
      border: 1px  solid rgba(40, 63, 63, 0.548) ;
      border-radius: 0.3em;
      font-family: 'Proza Libre', sans-serif;
@@ -83,7 +78,6 @@
     button {     
       display:inline-block;
       justify-content:center;
-      padding:1em 0.25em;
       align-items:center;
       border: 2px  solid rgb(97, 91, 91);
       border-radius: 0.2em;
@@ -115,7 +109,7 @@
      font-size:25px;
      justify-content:left;
      margin: 1em auto 0 auto;
-      font-family: 'Proza Libre', sans-serif; 
+     font-family: 'Proza Libre', sans-serif; 
 
     }
     
@@ -190,10 +184,33 @@
     }
 
    /*Media Queries.*/
-   
+   @media (orientation: landscape) {
+  body {
+     flex-direction: row;
+     background-repeat:repeat;
+  }
+}
 
- 
-  </style>
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+     font-size: 15px;
+     height:100vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+     font-size: 18px;
+     height:100vh;
+     background-repeat: repeat;
+  }
+}
+</style>
  </head>
    <body>
     <main>
@@ -256,4 +273,4 @@
   </body>
 </html>
       
-      
+    
